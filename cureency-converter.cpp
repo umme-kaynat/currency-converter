@@ -116,3 +116,42 @@ else if(currency1==3)
         }
 
        }
+else if(currency1==4)
+       {
+            cout << "\nYou have selected Chinese Yuan.\n";
+            cout << "Please choose a value in Chinese Yuan: ";
+            cin >> value;
+            cout << "\nYou have chosen " << value << " Chinese Yuan.\n";
+            cout << "Please choose the currency you wish to convert to: ";
+            cin >> currency2;
+
+        switch (currency2)
+        {
+            case 1:
+                cout << "\nYou have chosen Euro.\n\n";
+                rate = value * 0.15;
+                cout << value << " Chinese Yuan == " << rate << " Euro.\n\n\n\n";
+                break;
+            case 2:
+                cout << "\nYou have chosen Pounds.\n\n";
+                rate = value * 0.12;
+                cout << value << " Chinese Yuan == " << rate << " Pounds.\n\n\n\n";
+                break;
+            case 3:
+                cout << "\nYou have chosen Dollars.\n\n";
+                rate = value * 0.16;
+                cout << value << " Chinese Yuan == " << rate << " Dollars.\n\n\n\n";
+                break;
+            case 4:
+                cout << "\nYou have chosen Chinese Yuan.\n\n";
+                rate = value * 1;
+                cout << value << " Chinese Yuan == " << rate << " Chinese Yuan.\n\n\n\n";
+                break;
+        }
+
+       }
+       else
+       cout<<"You entered wrong number";
+
+          return 0;
+    }
