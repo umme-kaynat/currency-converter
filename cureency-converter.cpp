@@ -48,3 +48,37 @@ int main()
                 cout << value << " Euro == " << rate << " Chinese Yuan.\n\n\n\n";
                 break;
         }}
+else if(currency1==2)
+       {
+            cout << "\nYou have selected Pound.\n";
+            cout << "Please choose a value in Pounds: ";
+            cin >> value;
+            cout << "\nYou have chosen " << value << " Pounds.\n";
+            cout << "Please choose the currency you wish to convert to: ";
+            cin >> currency2;
+
+        switch (currency2)
+        {
+            case 1:
+                cout << "\nYou have chosen Euro.\n\n";
+                rate = value * 1.21;
+                cout << value << " Pounds == " << rate << " Euro.\n\n\n\n";
+                break;
+            case 2:
+                cout << "\nYou have chosen Pounds.\n\n";
+                rate = value * 1;
+                cout << value << " Pounds == " << rate << " Pounds.\n\n\n\n";
+                break;
+            case 3:
+                cout << "\nYou have chosen Dollars.\n\n";
+                rate = value * 1.31;
+                cout << value << " Pounds == " << rate << " Dollars.\n\n\n\n";
+                break;
+            case 4:
+                cout << "\nYou have chosen Chinese Yuan.\n\n";
+                rate = value * 8.32;
+                cout << value << " Pounds == " << rate << " Chinese Yuan.\n\n\n\n";
+                break;
+        }
+
+       }
